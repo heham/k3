@@ -2,6 +2,7 @@ cd /tmp
 opkg update
 opkg install libustream-openssl
 opkg install curl
+opkg install jq
 opkg install luci-i18n-base-zh-cn
 wget --no-check-certificate https://github.com/heham/k3/raw/master/brcmfmac4366c-pcie.bin.69027
 wget --no-check-certificate https://github.com/heham/k3/raw/master/k3screenctrl.tar
