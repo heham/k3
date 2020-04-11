@@ -4,11 +4,11 @@ opkg install libustream-openssl
 opkg install curl
 opkg install jq
 opkg install luci-i18n-base-zh-cn
-wget --no-check-certificate https://github.com/heham/k3/raw/master/brcmfmac4366c-pcie.bin.69027
+wget --no-check-certificate https://github.com/heham/k3/raw/master/brcmfmac4366c-pcie.bin-xiaoshan
 wget --no-check-certificate https://github.com/heham/k3/raw/master/k3screenctrl.tar
 
 mv /lib/firmware/brcm/brcmfmac4366c-pcie.bin /lib/firmware/brcm/brcmfmac4366c-pcie.bin0
-cp ./brcmfmac4366c-pcie.bin.69027 /lib/firmware/brcm/brcmfmac4366c-pcie.bin
+cp ./brcmfmac4366c-pcie.bin-xiaoshan /lib/firmware/brcm/brcmfmac4366c-pcie.bin
 chmod 755 /lib/firmware/brcm/brcmfmac4366c-pcie.bin
 
 mkdir k3screenctrl
@@ -22,7 +22,7 @@ chmod 755 /etc/init.d/k3screenctrl
 ln -s /etc/init.d/k3screenctrl /etc/rc.d/S40k3screenctrl
 
 rm /lib/firmware/brcm/brcmfmac4366c-pcie.bin0
-rm ./brcmfmac4366c-pcie.bin.69027
+rm ./brcmfmac4366c-pcie.bin-xiaoshan
 rm ./k3screenctrl.tar
 rm -rf ./k3screenctrl/
 
